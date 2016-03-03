@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+	<title>JavaScript Simon</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+	<link href='https://fonts.googleapis.com/css?family=Ultra' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<div class="container-fluid text-center">
+		<h3 id="rules">Rules: Make it to twenty to win.<br>Strict mode forces loss after one mistake.</h3>
+		<div id="machine">
+			<div id="buttonPanel">
+				<button class="bigbtn regularColor1" type="button" id="btn1"></button>
+				<button class="bigbtn regularColor2" type="button" id="btn2"></button>
+				<button class="bigbtn regularColor3" type="button" id="btn3"></button>
+				<button class="bigbtn regularColor4" type="button" id="btn4"></button>
+			</div>
+			<div id="controlPanel" class="brushedMetal">
+				<h1>Simon<sup>&reg;</sup></h1>
+				<div id="countScreen"><p id="counterFont">--</p></div>
+				<button type="button" id="startButton"></button>
+				<button type="button" id="strictButton"></button>
+				<div id="textRow"><h2>COUNT</h2><h2>START</h2><h2>STRICT</h2></div>
+				<div id="switchContainer"><button type="button" id="switchButton"></button></div>
+			</div>
+		</div>
+	</div>
+	<script language="JavaScript" type="text/javascript"src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script language="JavaScript" type="text/javascript"src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+	<script src='https://cdn.rawgit.com/admsev/jquery-play-sound/master/jquery.playSound.js'></script>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
