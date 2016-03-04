@@ -3,7 +3,7 @@ body {
 	background: #E6DADA; /* fallback for old browsers */
 	background: -webkit-linear-gradient(to left, #E6DADA , #274046); /* Chrome 10-25, Safari 5.1-6 */
 	background: linear-gradient(to left, #E6DADA , #274046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-	        
+	min-width: 440px;        
 }
 
 h1 {
@@ -38,7 +38,7 @@ button:focus {
 }
 
 #machine {
-	padding-top: 125px;
+	padding-top: 133px;
 	padding-bottom: 100px;
 }
 
@@ -82,7 +82,7 @@ button:focus {
     border-width: 10px;
 	position: relative;
 	margin: auto;
-    margin-top: -303px;
+    margin-top: -309px;
 }
 
 #countScreen {
@@ -103,7 +103,7 @@ button:focus {
     border-radius: 100%;
     height: 25px;
     width: 25px;
-    margin-right: 32px;
+    margin-right: 23px;
     margin-top: 3px;
 
 }
@@ -113,8 +113,18 @@ button:focus {
     border-radius: 100%;
     height: 25px;
     width: 25px;
-    margin-right: 15px;
+    margin-right: 24px;
 
+}
+
+#strictLight {
+    width: 6px;
+    height: 6px;
+    background-color: #421717;
+    border-radius: 50%;
+    position: absolute;
+    margin-left: 159px;
+    margin-top: -35px;
 }
 
 #textRow {
@@ -123,9 +133,10 @@ button:focus {
 }
 
 #switchContainer {
-	margin-top: 30px;
+    margin-top: 30px;
     margin-left: 80px;
-    height: 15px;
+    height: 21px;
+    border-style: solid;
     border-radius: 19%;
     background-color: black;
     position: absolute;
@@ -134,7 +145,7 @@ button:focus {
 }
 
 #switchButton {
-	background-color: #4B4BB3;
+    background-color: #4B4BB3;
     height: 15px;
     border-radius: 20%;
     padding-bottom: 0px;
@@ -151,28 +162,28 @@ button:focus {
 	color: red;
 }
 
-.regularColor1 {
+.lightenColor1 {
 	background-color: /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b4ddb4+0,83c783+17,52b152+33,008a00+67,005700+83,002400+100;Green+3D+%231 */background:#b4ddb4;
     background: -moz-radial-gradient(center, ellipse cover, #b4ddb4 0%, #83c783 17%, #52b152 33%, #008a00 67%, #005700 83%, #002400 100%);
     background: -webkit-radial-gradient(center, ellipse cover, #b4ddb4 0%,#83c783 17%,#52b152 33%,#008a00 67%,#005700 83%,#002400 100%);
     background: radial-gradient(ellipse at center, #b4ddb4 0%,#83c783 17%,#52b152 33%,#008a00 67%,#005700 83%,#002400 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b4ddb4', endColorstr='#002400',GradientType=1 );
 }
-.regularColor2 {
+.lightenColor2 {
 	background-color: /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#a90329+0,8f0222+38,6d0019+100 */background:#a90329;
     background: -moz-radial-gradient(center, ellipse cover, #a90329 0%, #8f0222 38%, #6d0019 100%);
     background: -webkit-radial-gradient(center, ellipse cover, #a90329 0%,#8f0222 38%,#6d0019 100%);
     background: radial-gradient(ellipse at center, #a90329 0%,#8f0222 38%,#6d0019 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019',GradientType=1 );
 }
-.regularColor3 {
+.lightenColor3 {
 	background-color: /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fefcea+4,f1da36+58 */background:#fefcea;
     background: -moz-radial-gradient(center, ellipse cover, #fefcea 4%, #f1da36 58%);
     background: -webkit-radial-gradient(center, ellipse cover, #fefcea 4%,#f1da36 58%);
     background: radial-gradient(ellipse at center, #fefcea 4%,#f1da36 58%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefcea', endColorstr='#f1da36',GradientType=1 );
 }
-.regularColor4 {
+.lightenColor4 {
 	background-color: /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#a7cfdf+0,23538a+100;Blue+3d+%238 */background:#a7cfdf;
     background: -moz-radial-gradient(center, ellipse cover, #a7cfdf 0%, #23538a 100%);
     background: -webkit-radial-gradient(center, ellipse cover, #a7cfdf 0%,#23538a 100%);
@@ -180,17 +191,17 @@ button:focus {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a7cfdf', endColorstr='#23538a',GradientType=1 );
 }
 
-.lightenColor1 {
-	background-color: #4DB14D !important; 
+.regularColor1 {
+	background-color: #4DB14D; 
 }
-.lightenColor2 {
-	background-color: #AB2D2D !important;
+.regularColor2 {
+	background-color: #AB2D2D;
 }
-.lightenColor3 {
-	background-color: #E1E565 !important;
+.regularColor3 {
+	background-color: #E1E565;
 }
-.lightenColor4 {
-	background-color: #4747A3 !important;
+.regularColor4 {
+	background-color: #4747A3;
 }
 
 .brushedMetal { 
@@ -206,16 +217,3 @@ button:focus {
     
     -webkit-radial-gradient( 50% 50%, 200% 50%, hsla(0,0%,90%,1) 5%, hsla(0,0%,85%,1) 30%, hsla(0,0%,60%,1) 100%);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
